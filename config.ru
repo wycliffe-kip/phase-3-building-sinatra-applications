@@ -1,11 +1,5 @@
-require 'sinatra'
+# config.ru
 
-class App < Sinatra::Base
+require_relative "./config/environment"
 
-  get '/' do
-    'reload please!!!'
-  end
-  
-end
-
-run App
+run ApplicationController
